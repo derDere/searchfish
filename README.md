@@ -1,2 +1,3 @@
-# searchfish
-searchfish
+# SearchFish
+
+![banner.png](banner.png)

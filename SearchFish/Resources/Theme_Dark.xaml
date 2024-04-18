@@ -1,0 +1,37 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:SearchFish">
+
+    <!-- DEFINITIONS =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+    
+    <Color x:Key="ForegroundColor">#FFE6E6E6</Color>
+    <Color x:Key="BackgroundColor">#FF1E1E1E</Color>
+    <Color x:Key="PanelBackgroundColor1">#11FFFFFF</Color>
+    <Color x:Key="PanelBackgroundColor2">#06FFFFFF</Color>
+    <Color x:Key="BorderColor">#FF326A73</Color>
+    <Color x:Key="AccentColor1">#FF00BDDC</Color>
+    <Color x:Key="AccentColor2">#FF00889E</Color>
+    <Color x:Key="AccentColor3">#FFF09400</Color>
+    <Color x:Key="AccentColor4">#FF26B88B</Color>
+    <Color x:Key="AccentColor5">#FFFFD8B1</Color>
+
+    <SolidColorBrush x:Key="ForegroundBrush" Color="{StaticResource ForegroundColor}"/>
+    <SolidColorBrush x:Key="BackgroundBrush" Color="{StaticResource BackgroundColor}"/>
+    <SolidColorBrush x:Key="PanelBackgroundBrush1" Color="{StaticResource PanelBackgroundColor1}"/>
+    <SolidColorBrush x:Key="PanelBackgroundBrush2" Color="{StaticResource PanelBackgroundColor2}"/>
+    <SolidColorBrush x:Key="BorderBrush" Color="{StaticResource BorderColor}"/>
+    <SolidColorBrush x:Key="AccentBrush1" Color="{StaticResource AccentColor1}"/>
+    <SolidColorBrush x:Key="AccentBrush2" Color="{StaticResource AccentColor2}"/>
+    <SolidColorBrush x:Key="AccentBrush3" Color="{StaticResource AccentColor3}"/>
+    <SolidColorBrush x:Key="AccentBrush4" Color="{StaticResource AccentColor4}"/>
+    <SolidColorBrush x:Key="AccentBrush5" Color="{StaticResource AccentColor5}"/>
+
+    <!-- STYLES =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+
+    <Style TargetType="local:MainWindow">
+        <Setter Property="Background" Value="{StaticResource BackgroundBrush}"/>
+        <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}"/>
+    </Style>
+    
+</ResourceDictionary>
