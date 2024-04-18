@@ -25,40 +25,12 @@ namespace SearchFish {
       InitializeComponent();
     }
 
-    private async void TestGoogleBtn_Click(object sender, RoutedEventArgs e) {
+    private async void TestBtn_Click(object sender, RoutedEventArgs e) {
       OpenFileDialog openFileDialog = new OpenFileDialog();
       openFileDialog.Filter = "Image files (*.jpg, *.jpeg, *.png) | *.jpg; *.jpeg; *.png";
 
       if (openFileDialog.ShowDialog() == true) {
         string imagePath = openFileDialog.FileName;
-
-
-
-
-
-
-
-
-
-        //var Ocr = new IronTesseract();
-        //using (var Input = new OcrInput(imagePath)) {
-        //  Input.EnhanceResolution();
-        //  Input.DeNoise();
-        //  var result = Ocr.Read(Input);
-        //  GoogleTxb.Text = result.Text;
-        //}
-
-
-
-
-
-
-
-
-
-
-
-
         try {
           // Create an instance of the TesseractEngine using the default language ("eng" for English)
           using (var engine = new TesseractEngine(@"C:\Users\phill\sources\tessdata_fast", "eng", EngineMode.Default)) {
@@ -70,50 +42,14 @@ namespace SearchFish {
                 string text = page.GetText();
 
                 // Output the recognized text
-                GoogleTxb.Text = text;
+                TestTxb.Text = text;
               }
             }
           }
         }
         catch (Exception ex) {
-          GoogleTxb.Text = ex.ToString();
+          TestTxb.Text = ex.ToString();
         }
-
-
-
-
-
-
-
-
-
-
-
-        //// Load image into MemoryStream
-        //using (MemoryStream imageStream = new MemoryStream(File.ReadAllBytes(imagePath))) {
-        //  // Initialize the ImageAnnotatorClient
-        //  ImageAnnotatorClient client = await ImageAnnotatorClient.CreateAsync();
-
-        //  Google.Cloud.Vision.V1.Image image = Google.Cloud.Vision.V1.Image.FromStream(imageStream);
-
-        //  // Perform OCR on the image
-        //  IReadOnlyList<EntityAnnotation> response = await client.DetectTextAsync(image);
-
-        //  // Extract text from response
-        //  string extractedText = response?.FirstOrDefault()?.Description;
-
-        //  // Display extracted text in TextBox
-        //  GoogleTxb.Text = extractedText;
-
-        //  // Perform label detection on the image
-        //  IReadOnlyList<EntityAnnotation> labelAnnotations = await client.DetectLabelsAsync(image);
-
-        //  // Extract labels from response
-        //  List<string> labels = labelAnnotations?.Select(annotation => annotation.Description).ToList();
-
-        //  // Display labels in a separate TextBox
-        //  GoogleTxb.Text += "\n\n\n\n/* ------------------------------------------ */" + string.Join(", ", labels);
-        //}
       }
     }
   }

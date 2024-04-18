@@ -23,13 +23,13 @@
         <Rectangle Grid.ColumnSpan="2" Grid.Row="2" Fill="{StaticResource BorderBrush}" Height="1" VerticalAlignment="Top" />
         <Rectangle Grid.Row="1" Fill="{StaticResource PanelBackgroundBrush2}" />
 
-        <Button x:Name="TestGoogleBtn"
+        <Button x:Name="TestBtn"
                 Grid.Row="1"
                 VerticalAlignment="Center" HorizontalAlignment="Center"
                 Padding="20 5"
-                Click="TestGoogleBtn_Click">Google</Button>
+                Click="TestBtn_Click">Test OCR</Button>
 
-        <TextBox x:Name="GoogleTxb"
+        <TextBox x:Name="TestTxb"
                  IsReadOnly="True" FontFamily="Consolas" Grid.Column="1" Grid.Row="1"
                  VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
                  Margin="5" Padding="5" TextWrapping="NoWrap"
