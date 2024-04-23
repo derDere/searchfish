@@ -1,0 +1,15 @@
+{
+  "Setup.Error.NoDbFile": "We where unable to find your Database file!",
+  "Setup.Error.InvalidDb": "Your Database doesn't seem to be matching our structure!",
+  "Setup.Error.UnsetPickup": "You doesn't seem to have setup you scanner-pickup folder!",
+  "Setup.Error.PickupNotFound": "We where unable to find your scanner-pickup folder!",
+
+  "UI.Setup.DbPath": "Sqlite Database Path:",
+  "UI.Setup.DefaultDbPathInfo": "Use default Database location.",
+  "UI.Setup.ScannerPickupPath": "Scanner Pickup Folder:",
+
+  "UI.SaveAndClose": "Save & Close",
+  "UI.Browse": "Browse ...",
+
+  "": "EOF"
+}
